@@ -20,6 +20,8 @@ setLed		KEYWORD2
 setRow		KEYWORD2
 setColumn	KEYWORD2
 setDigit	KEYWORD2
+blankDigit	KEYWORD2
+showNumber	KEYWORD2
 setChar		KEYWORD2
 
 #######################################

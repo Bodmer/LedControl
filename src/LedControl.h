@@ -170,6 +170,22 @@ class LedControl {
         void setDigit(int addr, int digit, byte value, boolean dp);
 
         /* 
+         * Blank a digit on a 7-Segment Display
+         * Params:
+         * addr	address of the display
+         * digit	the position of the digit on the display (0..7)
+         */
+        void blankDigit(int addr, int digit);
+
+        /* 
+         * Display n unsigned long value on a 7-Segment Display
+         * Params:
+         * addr	address of the display
+         * value	the value to be displayed. (0x00..0x0F)
+         */
+        void showNumber(int addr, uint32_t val);
+
+        /* 
          * Display a character on a 7-Segment display.
          * There are only a few characters that make sense here :
          *	'0','1','2','3','4','5','6','7','8','9','0',
